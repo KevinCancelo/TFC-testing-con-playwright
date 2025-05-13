@@ -33,5 +33,10 @@ public class TCSimpleBet extends TCBase{
         PCHeaderBase tcHeader = PCHeaderFactory.createPCHeader(getPage(),getLanguage(), getCountry());
         tcHeader.goToBets();
 
+        // Select the appropriate frame to interact with the betting section
+        if (betsFrame.equals("mainFrame")) frame = getPage().mainFrame(); else frame = getPage().frame(betsFrame);
+
+        POBets poBets = new POBets(frame);
+        poBets.addFirstBet();// Place the first available bet
     }
 }
