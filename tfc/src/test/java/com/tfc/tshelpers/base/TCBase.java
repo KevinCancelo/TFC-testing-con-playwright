@@ -55,7 +55,6 @@ public class TCBase {
         return language;
     }
 
-
     public Page getPage() {
         return page;
     }
@@ -142,9 +141,10 @@ public class TCBase {
                 "_scaleFactor:" + System.getProperty("deviceScaleFactor").toUpperCase() +
                 "_isMobile:" + System.getProperty("isMobile").toUpperCase();
 
-       
+        Allure.getLifecycle().updateTestCase(testResult -> testResult.getLabels().removeIf(label -> "suite".equals(label.getName())));
         Allure.suite(testSuiteId);
 
+        Allure.getLifecycle().updateTestCase(testResult -> testResult.setHistoryId(UUID.nameUUIDFromBytes((testResult.getName().toString()+testSuiteId).getBytes()).toString()));
     }
     
     // Runs before each individual test

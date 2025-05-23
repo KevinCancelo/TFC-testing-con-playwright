@@ -7,17 +7,17 @@ public class POHome {
 
     private Page page;
 
-    private static final String ACCEPT_COOKIES_BUTTON = "#onetrust-accept-btn-handler";
+    private static final String HEADER= ".heading";
     
     public POHome(Page page){
 
         this.page = page;
     }    
 
-    //Accepts cookies by clicking the consent button.
-    public void acceptCookies(){
+    //Get text inside the header.
+    public String getHeaderText(){
 
-        page.locator(ACCEPT_COOKIES_BUTTON).click();
+        return page.locator(HEADER).textContent();
     }
 
 }
