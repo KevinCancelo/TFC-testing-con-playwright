@@ -1,0 +1,33 @@
+Esto es un comando de ejecucion de un test del proyecto, en concreto el test Smokers en chrome desktop y no-headless:
+mvn test allure:report -D'maven.test.failure.ignore'=true -Dtest='TCSmokers' -P=user1 -Dtags=ES -Dbrowser=chrome -Dheadless=false -DviewportWidth=1600 -DviewportHeight=900 -DdeviceScaleFactor=1 -DisMobile=false
+
+Para crear un comando hay que tener en cuenta esto:
+mvn test allure:report -D'maven.test.failure.ignore'=true : es constante va a ser asi e todos los tests
+-Dtest='TCSmokers': aquí pondremos el nombre del archivo TC(test) que vamos a ejecutar 
+-P=user1: este marca el perfil que usaremos, según el test puede fallar si no usa el pefil correcto, si es asi lo indica el test con @Tag
+-Dtags=user1: si trabajasemos con varios entornos sería muy útil, pero el uso que tiene en este proyecto es para filtrar los usuarios que se pueden usar, pondremos tambien el usuario que usamos, si el tag es incorrecto se ejecutará nada
+-Dbrowser=chrome: aqui marcamos el navegador que vamos a usar, tres opciones: chrome, safari y firefox
+-Dheadless=false: marca si se visualiza el test o no, en true no se visualizaría
+-DviewportWidth=1600 -DviewportHeight=900 -DdeviceScaleFactor=1: marcan el tamaño de la pantalla, variará segun se mobile o desktop
+-DisMobile=false: marca si es mobile o no 
+
+Opciones de cada uno:
+-Dtest:
+    TCSmokers
+    TCLogin
+
+-P y -Dtags: 
+    user1
+    user2
+
+-Dbrowser: 
+    chrome
+    safari
+    firefox
+
+-Dheadless:
+    true
+    false
+
+Mobile: -DviewportWidth=360 -DviewportHeight=740 -DdeviceScaleFactor=1 -DisMobile=true
+Desktop: -DviewportWidth=1600 -DviewportHeight=900 -DdeviceScaleFactor=1 -DisMobile=false

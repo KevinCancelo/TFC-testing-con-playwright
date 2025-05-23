@@ -13,9 +13,11 @@ import com.tfc.tshelpers.pageobjects.POLogin;
 public class TCSmokes extends TCBase{
 
     // Smoke test: Verifies that the home page loads and the header is displayed
-    @Tag("ES")
+    @Tag("user1")
+    @Tag("user2")
     @Test
     public void shouldLoadHomePage() {
+        //Open the application's home page
         getPage().navigate(getHomeUrl());
         
         POHome poHome = new POHome(getPage());
@@ -24,7 +26,8 @@ public class TCSmokes extends TCBase{
     }
 
     // Smoke test: Ensures that the main navigation links are present and visible
-    @Tag("ES")
+    @Tag("user1")
+    @Tag("user2")
     @Test
     public void shouldDisplayMainNavigationLinks() {
         getPage().navigate(getHomeUrl());
@@ -35,7 +38,8 @@ public class TCSmokes extends TCBase{
     }
 
     // Smoke test: Checks that the login link navigates to the correct login page
-    @Tag("ES")
+    @Tag("user1")
+    @Tag("user2")
     @Test
     public void shouldNavigateToLoginPage() {
         getPage().navigate(getHomeUrl());

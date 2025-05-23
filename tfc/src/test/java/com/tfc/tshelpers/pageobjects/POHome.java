@@ -7,9 +7,9 @@ public class POHome {
 
     private Page page;
 
-    private static final String HEADER= ".heading";
-    private static final String LINKS_TEST = "ul li a";
-    private static final String LOGIN_LINK = "a[href='/login']";
+    private static final String HEADER= ".heading";//. is for class
+    private static final String LINKS_TEST = "ul li a"; //Selects all <a> elements inside <li> inside <ul>
+    private static final String LOGIN_LINK = "a[href='/login']";//[] for specific stributtes
     
     public POHome(Page page){
 
