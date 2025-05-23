@@ -9,6 +9,7 @@ public class POHome {
 
     private static final String HEADER= ".heading";
     private static final String LINKS_TEST = "ul li a";
+    private static final String LOGIN_LINK = "a[href='/login']";
     
     public POHome(Page page){
 
@@ -21,9 +22,15 @@ public class POHome {
         return page.locator(HEADER).textContent();
     }
 
-    // Count how many navigation links are present
+    //Count how many navigation links are present
     public int countLinksTest(){
+
         return page.locator(LINKS_TEST).count();
     }
 
+    //Click login link
+    public void clickLogin (){
+
+        page.locator(LOGIN_LINK).click();
+    }
 }
