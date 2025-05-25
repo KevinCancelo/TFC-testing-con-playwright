@@ -15,7 +15,7 @@ public class TCLogin extends TCBase{
 
     @Tag("user1")
     @Test
-    public void shouldNavigateToLoginPage() {
+    public void login() {
         getPage().navigate(getHomeUrl());
         
         POHome poHome = new POHome(getPage());
