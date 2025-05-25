@@ -86,9 +86,6 @@ public class TCBase {
             case "CHROME":
                 browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(headlessOption));
                 break;
-            case "FIREFOX":
-                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(headlessOption));
-                break;
             case "SAFARI":
                 browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(headlessOption));
                 break;
