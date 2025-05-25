@@ -37,6 +37,10 @@ public class TCBase {
     private String country;
     @Value("${language}")
     private String language;
+    @Value("${username}")
+    private String username;
+    @Value("${password}")
+    private String password;
     
     private static Playwright playwright;
     private Browser browser;
@@ -53,6 +57,14 @@ public class TCBase {
 
     public String getLanguage(){
         return language;
+    }
+
+    public String getUsername(){
+        return username;
+    }
+
+    public String getPassword(){
+        return password;
     }
 
     public Page getPage() {
@@ -73,9 +85,6 @@ public class TCBase {
         switch (browserOption) {
             case "CHROME":
                 browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(headlessOption));
-                break;
-            case "FIREFOX":
-                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(headlessOption));
                 break;
             case "SAFARI":
                 browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(headlessOption));
