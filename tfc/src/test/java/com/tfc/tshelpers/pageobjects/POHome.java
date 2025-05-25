@@ -10,6 +10,7 @@ public class POHome {
     private static final String HEADER= ".heading";//. is for class
     private static final String LINKS_TEST = "ul li a"; //Selects all <a> elements inside <li> inside <ul>
     private static final String LOGIN_LINK = "a[href='/login']";//[] for specific stributtes
+    private static final String FRAMES_LINK = "a[href='/frames']";
     
     public POHome(Page page){
 
@@ -32,5 +33,10 @@ public class POHome {
     public void clickLogin (){
 
         page.locator(LOGIN_LINK).click();
+    }
+
+    public void clickFrames (){
+
+        page.locator(FRAMES_LINK).click();
     }
 }
