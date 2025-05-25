@@ -14,8 +14,9 @@ import com.tfc.tshelpers.pageobjects.POIFrame;
 public class TCIFrame extends TCBase{
 
     @Tag("user1")
+    @Tag("user2")
     @Test
-    public void login() {
+    public void iFrame() {
         getPage().navigate(getHomeUrl());
         
         POHome poHome = new POHome(getPage());
