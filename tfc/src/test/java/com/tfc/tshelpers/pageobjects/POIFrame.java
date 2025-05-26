@@ -3,7 +3,7 @@ package com.tfc.tshelpers.pageobjects;
 import com.microsoft.playwright.Page;
 
 public class POIFrame {
-  Page page;
+    Page page;
 
     private static final String IFRAME = "#mce_0_ifr";
     private static final String TEXT = "p";
