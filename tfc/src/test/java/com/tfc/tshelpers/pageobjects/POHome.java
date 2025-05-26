@@ -11,6 +11,8 @@ public class POHome {
     private static final String LINKS_TEST = "ul li a"; //Selects all <a> elements inside <li> inside <ul>
     private static final String LOGIN_LINK = "a[href='/login']";//[] for specific stributtes
     private static final String FRAMES_LINK = "a[href='/frames']";
+    private static final String ALERTS_LINK = "a[href='/javascript_alerts']";
+
     
     public POHome(Page page){
 
@@ -38,5 +40,10 @@ public class POHome {
     public void clickFrames (){
 
         page.locator(FRAMES_LINK).click();
+    }
+
+    public void clickAlerts (){
+
+        page.locator(ALERTS_LINK).click();
     }
 }
