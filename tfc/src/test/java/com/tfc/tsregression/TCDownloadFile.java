@@ -40,7 +40,7 @@ public class TCDownloadFile extends TCBase{
     @Tag("user1")
     @Tag("user2")
     @Test
-    public void DownloadFileByLink() throws IOException{
+    public void downloadFileByLink() throws IOException{
         getPage().navigate(getHomeUrl());
         
         POHome poHome = new POHome(getPage());
