@@ -12,6 +12,7 @@ public class POHome {
     private static final String LOGIN_LINK = "a[href='/login']";//[] for specific stributtes
     private static final String FRAMES_LINK = "a[href='/frames']";
     private static final String ALERTS_LINK = "a[href='/javascript_alerts']";
+    private static final String DOWNLOAD_FILE_LINK="a[href='/download']";
     private static final String LINKS = "a";
 
     
@@ -46,6 +47,11 @@ public class POHome {
     public void clickAlerts (){
 
         page.locator(ALERTS_LINK).click();
+    }
+
+    public void clickDownloadFile (){
+
+        page.locator(DOWNLOAD_FILE_LINK).click();
     }
 
     //Clicks the link at the specified zero-based index position
