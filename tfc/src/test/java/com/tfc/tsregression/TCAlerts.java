@@ -10,6 +10,7 @@ import com.tfc.tshelpers.pageobjects.POHome;
 
 
 public class TCAlerts extends TCBase{
+    
     @Tag("user1")
     @Tag("user2")
     @Test
@@ -17,7 +18,6 @@ public class TCAlerts extends TCBase{
         
         //Global dialog handler for JavaScript alerts
         getPage().onDialog(dialog -> {
-            System.out.println("Texto de la alerta: " + dialog.message());
             dialog.accept(); // Automatically accept alerts
         });  
         getPage().navigate(getHomeUrl());
@@ -30,4 +30,44 @@ public class TCAlerts extends TCBase{
 
         Assertions.assertEquals("You successfully clicked an alert", poAlerts.readResultText());
     }
+
+    @Tag("user1")
+    @Tag("user2")
+    @Test
+    public void JSConfirmAcept() {
+        
+        getPage().onDialog(dialog -> {
+            dialog.accept();
+        });  
+        getPage().navigate(getHomeUrl());
+        
+        POHome poHome = new POHome(getPage());
+        poHome.clickAlerts();
+        
+        POAlerts poAlerts = new POAlerts(getPage());
+        poAlerts.generateJSConfirm();
+
+        Assertions.assertEquals("You clicked: Ok", poAlerts.readResultText());
+    }
+
+    @Tag("user1")
+    @Tag("user2")
+    @Test
+    public void JSConfirmCancel() {
+        
+
+        getPage().onDialog(dialog -> {
+            dialog.dismiss();// Automatically cancel alerts
+        });  
+        getPage().navigate(getHomeUrl());
+        
+        POHome poHome = new POHome(getPage());
+        poHome.clickAlerts();
+        
+        POAlerts poAlerts = new POAlerts(getPage());
+        poAlerts.generateJSConfirm();
+
+        Assertions.assertEquals("You clicked: Cancel", poAlerts.readResultText());
+    }
+
 }

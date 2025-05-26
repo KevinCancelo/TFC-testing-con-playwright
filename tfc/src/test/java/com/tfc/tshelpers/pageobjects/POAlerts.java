@@ -6,6 +6,7 @@ public class POAlerts {
     Page page;
 
     private static final String JS_ALERT = "[onclick='jsAlert()']";
+    private static final String JS_CONFIRM = "[onclick='jsConfirm()']";
     private static final String RESULT_TEXT = "#result";
 
     public POAlerts(Page page){
@@ -16,6 +17,11 @@ public class POAlerts {
     public void generateJSAlert(){
        
         page.locator(JS_ALERT).click();
+    }
+
+    public void generateJSConfirm(){
+       
+        page.locator(JS_CONFIRM).click();
     }
 
     public String readResultText(){
