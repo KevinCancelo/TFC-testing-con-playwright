@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 public class PODownloadFile {
     Page page;  
 
-    private static final String TXT_FILE = "a";     //"a[href='download/test_upload.txt']"; acaban de actualizar ahora mismo la página web, esperar a que metan todos los archivos
+    private static final String TXT_FILE = "#content a";     //"a[href='download/test_upload.txt']"; acaban de actualizar ahora mismo la página web, esperar a que metan todos los archivos
 
     public PODownloadFile(Page page){
 

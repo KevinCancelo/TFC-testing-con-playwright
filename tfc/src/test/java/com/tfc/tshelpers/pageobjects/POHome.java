@@ -12,8 +12,8 @@ public class POHome {
     private static final String LOGIN_LINK = "a[href='/login']";//[] for specific stributtes
     private static final String FRAMES_LINK = "a[href='/frames']";
     private static final String ALERTS_LINK = "a[href='/javascript_alerts']";
-    private static final String DOWNLOAD_FILE_LINK="a[href='/download']";
-    private static final String LINKS = "a";
+    private static final String DOWNLOAD_FILE_LINK = "a[href='/download']";
+    private static final String LINKS = "#content a";
 
     
     public POHome(Page page){
