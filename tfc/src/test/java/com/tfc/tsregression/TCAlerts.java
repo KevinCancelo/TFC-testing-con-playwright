@@ -1,5 +1,6 @@
 package com.tfc.tsregression;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -26,5 +27,7 @@ public class TCAlerts extends TCBase{
         
         POAlerts poAlerts = new POAlerts(getPage());
         poAlerts.generateJSAlert();
+
+        Assertions.assertEquals("You successfully clicked an alert", poAlerts.readResultText());
     }
 }

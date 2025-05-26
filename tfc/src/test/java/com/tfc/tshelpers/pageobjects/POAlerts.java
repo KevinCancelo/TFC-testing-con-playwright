@@ -6,6 +6,7 @@ public class POAlerts {
     Page page;
 
     private static final String JS_ALERT = "[onclick='jsAlert()']";
+    private static final String RESULT_TEXT = "#result";
 
     public POAlerts(Page page){
 
@@ -17,4 +18,8 @@ public class POAlerts {
         page.locator(JS_ALERT).click();
     }
 
+    public String readResultText(){
+
+        return page.locator(RESULT_TEXT).textContent();
+    }
 }
