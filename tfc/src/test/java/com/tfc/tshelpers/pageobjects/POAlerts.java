@@ -7,6 +7,7 @@ public class POAlerts {
 
     private static final String JS_ALERT = "[onclick='jsAlert()']";
     private static final String JS_CONFIRM = "[onclick='jsConfirm()']";
+    private static final String JS_PROMPT = "[onclick='jsPrompt()']";
     private static final String RESULT_TEXT = "#result";
 
     public POAlerts(Page page){
@@ -22,6 +23,11 @@ public class POAlerts {
     public void generateJSConfirm(){
        
         page.locator(JS_CONFIRM).click();
+    }
+
+    public void generateJSPrompt(){
+       
+        page.locator(JS_PROMPT).click();
     }
 
     public String readResultText(){
