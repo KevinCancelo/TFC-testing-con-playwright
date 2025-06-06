@@ -11,7 +11,7 @@ import com.tfc.tshelpers.pageobjects.POHome;
 // Tests for handling JavaScript alert, confirm, and prompt dialogs
 public class TCAlerts extends TCBase{
 
-    private static final String PROMPT_MESSAGE = "Hola mundo";
+    private static final String PROMPT_MESSAGE = "Hola mundo"; // Message sent to prompt dialog
     
     // Test simple alert and validate success message
     @Tag("user1")

@@ -6,7 +6,7 @@ import com.microsoft.playwright.Page;
 public class PODownloadFile {
     Page page;  
 
-    private static final String DOWNLOAD_LINKS = "a";
+    private static final String DOWNLOAD_LINKS = "a"; // Selector for all links
 
     public PODownloadFile(Page page){
 

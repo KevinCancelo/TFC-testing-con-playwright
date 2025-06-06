@@ -32,15 +32,15 @@ public class TCBase {
 
     // ${} syntax is used to reference external variables    
     @Value("${homeUrl}")
-    private String homeUrl;
+    private String homeUrl;// URL of the home page
     @Value("${country}")
-    private String country;
+    private String country;// Country setting
     @Value("${language}")
-    private String language;
+    private String language; // Language setting
     @Value("${username}")
-    private String username;
+    private String username;// User login name
     @Value("${password}")
-    private String password;
+    private String password;// User password
     
     private static Playwright playwright;
     private Browser browser;

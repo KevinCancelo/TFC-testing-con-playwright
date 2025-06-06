@@ -20,9 +20,9 @@ public class TCDownloadFile extends TCBase{
     // if there are no .txt files available at the moment. 
     // In that case, check the link https://the-internet.herokuapp.com/download 
     // or try running the test again later.
-    
-    private static final String TEST_FILE_PATH = "target/site/txt/";
-    private static final String BY_LINK_FILE_NAME = "downloaded_by_link.txt";
+        
+    private static final String TEST_FILE_PATH = "target/site/txt/";       // Path to download folder
+    private static final String BY_LINK_FILE_NAME = "downloaded_by_link.txt";  // Downloaded file name
 
     private String readDownloadFile (String fileName) throws IOException{
         TxtFileReader txtFileReader = new TxtFileReader();

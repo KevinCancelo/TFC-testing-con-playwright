@@ -7,7 +7,7 @@ import java.util.List;
 
 public class TxtFileReader {
     
-    private String textContent = "";
+    private String textContent = "";  // Stores content read from file
     
     public TxtFileReader(){}
 
@@ -20,7 +20,7 @@ public class TxtFileReader {
         List<String> lines = Files.readAllLines(Paths.get(path));
         
         for (String line : lines) {
-            textContent = textContent + line;
+        textContent = textContent + line;  // Concatenate each line
         }
     }
 }

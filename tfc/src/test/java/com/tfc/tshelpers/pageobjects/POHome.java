@@ -6,14 +6,14 @@ import com.microsoft.playwright.Page;
 public class POHome {
 
     private Page page;
-
-    private static final String HEADER= ".heading";//. is for class
-    private static final String LINKS_TEST = "ul li a"; //Selects all <a> elements inside <li> inside <ul>
-    private static final String LOGIN_LINK = "a[href='/login']";//[] for specific stributtes
-    private static final String FRAMES_LINK = "a[href='/frames']";
-    private static final String ALERTS_LINK = "a[href='/javascript_alerts']";
-    private static final String DOWNLOAD_FILE_LINK = "a[href='/download']";
-    private static final String LINKS = "#content a";
+    
+    private static final String HEADER= ".heading";              // Selector for header class
+    private static final String LINKS_TEST = "ul li a";          // All <a> inside <li> inside <ul>
+    private static final String LOGIN_LINK = "a[href='/login']"; // Selector for login link
+    private static final String FRAMES_LINK = "a[href='/frames']";// Selector for frames link
+    private static final String ALERTS_LINK = "a[href='/javascript_alerts']"; // Selector for alerts link
+    private static final String DOWNLOAD_FILE_LINK = "a[href='/download']";  // Selector for download link
+    private static final String LINKS = "#content a";             // All <a> inside element with id 'content'
 
     
     public POHome(Page page){

@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 public class POFrames {
     Page page;
 
-    private static final String IFRAME_LINK = "a[href='/iframe']";
+    private static final String IFRAME_LINK = "a[href='/iframe']";  // Selector for iframe link
 
     public POFrames(Page page){
 

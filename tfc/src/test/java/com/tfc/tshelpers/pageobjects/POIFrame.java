@@ -5,9 +5,9 @@ import com.microsoft.playwright.Page;
 public class POIFrame {
     Page page;
 
-    private static final String IFRAME = "#mce_0_ifr";
-    private static final String TEXT = "p";
-    private static final String CLOSE_MESSAGE = ".tox-button";
+    private static final String IFRAME = "#mce_0_ifr";       // Selector for iframe element
+    private static final String TEXT = "p";                   // Selector for paragraph elements
+    private static final String CLOSE_MESSAGE = ".tox-button"; // Selector for close button
 
     public POIFrame(Page page){
 
