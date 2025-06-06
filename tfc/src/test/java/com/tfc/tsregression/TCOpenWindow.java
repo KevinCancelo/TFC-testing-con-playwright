@@ -18,7 +18,7 @@ public class TCOpenWindow extends TCBase{
     @Tag("user1")
     @Tag("user2")
     @Test
-    public void TCOpenWindowFromHome(){
+    public void openWindowFromHome(){
         getPage().navigate(getHomeUrl());
 
         //Access the persistent bottom bar component
@@ -36,7 +36,7 @@ public class TCOpenWindow extends TCBase{
     @Tag("user1")
     @Tag("user2")
     @Test
-    public void TCOpenWindowFromAnywhere(){
+    public void openWindowFromAnywhere(){
         getPage().navigate(getHomeUrl());
 
         //Navigate to a random link

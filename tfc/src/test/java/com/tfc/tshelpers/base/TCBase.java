@@ -23,7 +23,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 // Load properties from the environment-specific config file
-@TestPropertySource("classpath:conf/${env}/user.properties")// ${env} is injected from Maven (e.g., -Denv=dev)
+@TestPropertySource("classpath:conf/${env}/user.properties")// ${env} is injected from Maven (e.g., -P=dev)
 // Load Spring context with application configuration
 @ContextConfiguration(classes = AppConfig.class)
 // Integrate Spring test lifecycle with JUnit 5
