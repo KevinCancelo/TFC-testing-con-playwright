@@ -21,6 +21,7 @@ Antes de empezar, asegúrate de contar con:
 Clona el repositorio a tu máquina local usando Git:
 
 git clone https://github.com/KevinCancelo/TFC-testing-con-playwright.git
+
 cd TFC-testing-con-playwright
 
 ## 🛠️ Tecnologías utilizadas
