@@ -1,5 +1,53 @@
 # TFC-testing-con-playwright
-En este trabajo se realizan una serie de tests sobre la página web de luckia. Se hace sobre esta dirección porque aquí realicé las practicas.
+![Playwright Banner](https://www.sngular.com/images/0/682/hero_l/playwright-blog-ok-V2-1439x411.png)
+
+
+![Java](https://img.shields.io/badge/Java-1.8+-red?logo=java&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-3.8+-brightgreen?logo=apachemaven&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-Java%20v1.40.0-purple?logo=microsoft&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit-5.10.1-25a162?logo=testinglibrary&logoColor=white)
+![Allure Reports](https://img.shields.io/badge/Allure-Enabled-ff69b4?logo=allure&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-blue)
+
+# 📖 Índice
+
+1. [Descripción del Proyecto](#descripción-del-proyecto)  
+2. [Estado del Proyecto](#estado-del-proyecto)  
+3. [Demostración de funciones y aplicaciones](#-demostración-de-funciones-y-aplicaciones)  
+4. [Acceso al Proyecto](#-acceso-al-proyecto)
+5. [Tecnologías utilizadas](#%EF%B8%8F-tecnologías-utilizadas)
+6. [Licencia](#licencia)  
+8. [Autor](#autor)
+9. [Créditos](#créditos)
+
+## Descripción del Proyecto
+
+Este proyecto tiene como objetivo implementar pruebas automatizadas para verificar el correcto funcionamiento de una página web utilizando Playwright. Las pruebas simulan acciones reales de usuario (como login, alertas, descarga de archivos o navegación entre ventanas) sobre la web libre [The Internet](https://the-internet.herokuapp.com/), diseñada específicamente para prácticas de testing.
+
+Está estructurado con el patrón POM y utiliza Maven para su ejecución y Allure para generar informes. Permite pruebas en distintos navegadores y resoluciones (desktop y mobile).
+
+El proyecto busca optimizar el tiempo de verificación tras cada cambio en la web, mejorar la cobertura de pruebas y, a futuro, añadir soporte para tests en paralelo, ejecución periódica y pruebas de API.
+
+## 📌Estado del Proyecto
+
+Este proyecto se encuentra actualmente en una fase de desarrollo **activa**.
+
+- ✅ **Funcionalidades principales implementadas:**  
+  - Tests automatizados usando Playwright para escenarios como login, manejo de alertas, descarga de archivos, interacción con iframes y ventanas externas.  
+  - Integración con Maven para gestión de dependencias y ejecución de pruebas.  
+  - Generación de reportes visuales con Allure.  
+  - Configuración multi-navegador (Chrome y Safari) y multi-dispositivo (Desktop y Mobile).    
+
+- 🔄 **Próximos pasos:**  
+  - Añadir tests para nuevos casos de uso.  
+  - Automatizar despliegue.
+  - Posibilidad de lanzar test en paralelo.
+  - Implementación de karate para abarcar test api.  
+
+- 🚦 **Estado general:**  
+  - Estable para uso interno y pruebas.  
+  - Requiere ajustes y mejoras para uso en producción o en entornos de clientes.
 
 ## 🎯 Demostración de funciones y aplicaciones
 
@@ -73,7 +121,7 @@ Este proyecto ha sido desarrollado empleando un conjunto de tecnologías moderna
 - **Java**  
   Lenguaje de programación orientado a objetos ampliamente utilizado en el desarrollo de aplicaciones empresariales, servicios web y automatización de pruebas.
 
-- **Maven**  
+- ****  
   Sistema de gestión y construcción de proyectos Java. Automatiza tareas como la compilación, empaquetado y gestión de dependencias a través del archivo de configuración `pom.xml`.
 
 - **JUnit**  
