@@ -11,23 +11,18 @@ import com.microsoft.playwright.Download;
 import com.tfc.tshelpers.base.TCBase;
 import com.tfc.tshelpers.pageobjects.PODownloadFile;
 import com.tfc.tshelpers.pageobjects.POHome;
-import com.tfc.tshelpers.utils.ExampleTxtDataJsonReader;
 import com.tfc.tshelpers.utils.TxtFileReader;
 
 public class TCDownloadFile extends TCBase{
 
+    // ALERT
+    // Files are updated frequently, so this test may produce a false negative 
+    // if there are no .txt files available at the moment. 
+    // In that case, check the link https://the-internet.herokuapp.com/download 
+    // or try running the test again later.
+    
     private static final String TEST_FILE_PATH = "target/site/txt/";
     private static final String BY_LINK_FILE_NAME = "downloaded_by_link.txt";
-    private static final String JSON_TEXT_TYPE = "example_text";
-    private String env = System.getProperty("env");
-    private String JSON_EXAMPLE_TXT_PATH = "src/test/resources/data/" + env + "/example_txt.json";
-
-    private String readJsonText(){
-        ExampleTxtDataJsonReader exampleTxtDataJsonReader = new ExampleTxtDataJsonReader();
-        exampleTxtDataJsonReader.readExampleTextDataFromJson(JSON_EXAMPLE_TXT_PATH, JSON_TEXT_TYPE);
-
-        return exampleTxtDataJsonReader.getTextContent();
-    }
 
     private String readDownloadFile (String fileName) throws IOException{
         TxtFileReader txtFileReader = new TxtFileReader();
@@ -55,11 +50,9 @@ public class TCDownloadFile extends TCBase{
         //Save the downloaded file to the specified local path
         download.saveAs(Paths.get(TEST_FILE_PATH + BY_LINK_FILE_NAME));
 
+        // Verifies the file was downloaded with content
         String downloadText = readDownloadFile(BY_LINK_FILE_NAME);
-
-        String jsonText = readJsonText();
-
-        Assertions.assertTrue(jsonText.equals(downloadText));
+        Assertions.assertTrue(downloadText.length()>0);
 
     }
 
