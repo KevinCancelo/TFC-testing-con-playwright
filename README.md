@@ -1,6 +1,43 @@
 # TFC-testing-con-playwright
 En este trabajo se realizan una serie de tests sobre la página web de luckia. Se hace sobre esta dirección porque aquí realicé las practicas.
 
+## 🎯 Demostración de funciones y aplicaciones
+
+Este proyecto automatiza pruebas funcionales utilizando **Playwright para Java**, con una arquitectura organizada según el patrón **Page Object Model (POM)**. Está desarrollado sobre la web pública [the-internet.herokuapp.com](https://the-internet.herokuapp.com), pensada para prácticas con herramientas como Selenium o Playwright.
+
+Aunque la plataforma es didáctica, el proyecto ha sido diseñado con una estructura escalable y un enfoque realista, ideal para entornos de desarrollo profesional, formación técnica o testing QA en equipos de software.
+
+### 🔍 Funcionalidades implementadas
+
+Se han desarrollado distintos escenarios de prueba que simulan interacciones comunes en aplicaciones web reales:
+
+- ✅ **Smoke Test Básico:** Comprueba que la aplicación carga correctamente y que los elementos esenciales están disponibles.
+- 🔐 **Autenticación/Login:**
+  - Validación de credenciales correctas e incorrectas.
+  - Verificación de mensajes de error o éxito.
+- ⚠️ **Alertas del navegador:**
+  - Detección y gestión de alertas JavaScript (`prompt`, `confirm`, `alert`).
+- 📁 **Descarga de archivos:**
+  - Descarga automatizada de archivos `.txt` y verificación de su presencia en disco.
+- 🪟 **Navegación entre ventanas:**
+  - Validación de comportamiento al interactuar con enlaces que abren nuevas pestañas o ventanas.
+- 🖼️ **Manejo de iframes:**
+  - Acceso e interacción con contenido embebido en marcos (iframes), incluyendo escritura y lectura.
+
+Cada prueba incluye validaciones específicas (`asserts`) para garantizar que el comportamiento observado es el esperado, y se ejecuta de forma secuencial para asegurar estabilidad.
+
+### ⚙️ Aplicaciones prácticas
+
+Este proyecto tiene múltiples aplicaciones reales y formativas:
+
+- 🧪 **Automatización funcional** de flujos básicos y críticos en una aplicación web.
+- 📈 **Generación de reportes automáticos** mediante herramientas como Allure, con evidencias visuales (CSS, JS, fuentes, imágenes) para cada ejecución.
+- 🎓 **Formación técnica en QA Automation**, incluyendo estructura de proyecto basada en POM, gestión de dependencias con Maven y buenas prácticas de codificación.
+- 🧱 **Base reutilizable** para equipos de testing que trabajen con Java y Playwright, adaptable a otras plataformas reales.
+- 🚀 **Simulación de escenarios reales** como descargas, navegación avanzada y uso de componentes embebidos, replicando desafíos típicos de automatización en producción.
+
+La ejecución está diseñada para lanzarse fácilmente desde la terminal del IDE (como Visual Studio Code) utilizando Maven, en el archivo [TUTORIAL MAVEN](./TUTORIAL_MAVEN.md).
+
 ## 🚀 Acceso al proyecto
 
 Para comenzar a trabajar con este proyecto de automatización en Playwright (Java) desarrollado en Visual Studio Code, sigue los pasos que se indican a continuación.
