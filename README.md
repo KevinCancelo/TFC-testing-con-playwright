@@ -1,6 +1,28 @@
 # TFC-testing-con-playwright
 En este trabajo se realizan una serie de tests sobre la página web de luckia. Se hace sobre esta dirección porque aquí realicé las practicas.
 
+## 🚀 Acceso al proyecto
+
+Para comenzar a trabajar con este proyecto de automatización en Playwright (Java) desarrollado en Visual Studio Code, sigue los pasos que se indican a continuación.
+
+### 🔧 Requisitos previos
+
+Antes de empezar, asegúrate de contar con:
+
+- **Sistema operativo:** Windows 10, macOS 10.13+ o una distribución moderna de Linux.
+- **Java JDK:** Versión 1.8 o superior (se recomienda JDK 1.8 para garantizar compatibilidad).
+- **Maven:** Versión 3.6.0 o superior para gestionar las dependencias y compilación.
+- **Navegador:** Chrome o WebKit (Safari) para ejecutar las pruebas automatizadas.
+- **IDE:** Visual Studio Code (recomendado), aunque se puede usar cualquier IDE compatible con Java.
+- **Hardware:** Al menos 4 GB de RAM y resolución mínima de pantalla de 1280x720.
+
+### 📦 Clonación del repositorio
+
+Clona el repositorio a tu máquina local usando Git:
+
+
+# copiar el link en casa
+
 ## 🛠️ Tecnologías utilizadas
 
 Este proyecto ha sido desarrollado empleando un conjunto de tecnologías modernas que facilitan la automatización de pruebas y la gestión eficiente del código. A continuación, se detallan las principales herramientas y dependencias utilizadas:
