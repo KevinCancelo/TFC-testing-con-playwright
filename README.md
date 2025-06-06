@@ -11,7 +11,7 @@ Este proyecto también hace uso del sitio [The Internet](https://the-internet.he
 
 ## Autor
 
-Este proyecto fue desarrollado por [Tu Nombre o Usuario de GitHub].
+Este proyecto fue desarrollado por Kevin Cancelo.
 
 Si deseas contribuir o tienes sugerencias, ¡las pull requests son bienvenidas!
 
