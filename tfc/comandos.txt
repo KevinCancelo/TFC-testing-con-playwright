@@ -16,6 +16,10 @@ Opciones de cada uno:
     TC* (ejecuta todos los test)
     TCSmokers
     TCLogin
+    TCAlerts
+    TCDownloadFile
+    TCIFrame
+    TCOpenWindow
 
 -P y -Dtags: 
     user1

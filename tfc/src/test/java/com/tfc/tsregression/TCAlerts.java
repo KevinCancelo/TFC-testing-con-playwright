@@ -17,7 +17,7 @@ public class TCAlerts extends TCBase{
     @Tag("user1")
     @Tag("user2")
     @Test
-    public void JSAlert() {
+    public void jSAlert() {
         
         //Global dialog handler for JavaScript alerts
         getPage().onDialog(dialog -> {
